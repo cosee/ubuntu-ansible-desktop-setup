@@ -14,6 +14,10 @@
     include: applications/chrome.yml
     become: yes
 
+  - name: Slack
+    include: applications/slack.yml
+    become: yes
+
   - name: htop
     include: applications/htop.yml
     become: yes
