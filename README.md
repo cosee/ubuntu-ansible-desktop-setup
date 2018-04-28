@@ -14,6 +14,8 @@ Java 8
 
 Chrome
 
+Slack
+
 htop
 
 gitk
