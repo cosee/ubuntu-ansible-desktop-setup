@@ -1,0 +1,6 @@
+---
+
+- name: Install xclip
+  package:
+    name: xclip
+    state: present

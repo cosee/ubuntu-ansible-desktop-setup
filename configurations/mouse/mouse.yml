@@ -1,0 +1,4 @@
+---
+
+- name: Copy mouse config to /usr/share/X11/xorg.conf.d
+  copy: src=90-mouse.conf dest=/usr/share/X11/xorg.conf.d force=no

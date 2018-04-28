@@ -1,0 +1,38 @@
+---
+
+- name: Ubuntu desktop setup
+  hosts: localhost
+  tasks:
+
+#-------------Applications---------------
+
+  - name: Java 8
+    include: applications/java.yml
+    become: yes
+
+  - name: Chrome
+    include: applications/chrome.yml
+    become: yes
+
+  - name: htop
+    include: applications/htop.yml
+    become: yes
+
+  - name: gitk
+    include: applications/gitk.yml
+    become: yes
+
+  - name: xclip
+    include: applications/xclip.yml
+    become: yes
+
+  - name: Hamster Time Tracker
+    include: applications/hamster.yml
+    become: yes
+
+
+# ------------Configurations--------------
+
+  - name: Remove mouse acceleration
+    include: configurations/mouse/mouse.yml
+    become: yes

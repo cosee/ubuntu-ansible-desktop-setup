@@ -1,0 +1,6 @@
+---
+
+- name: Install htop
+  package:
+    name: gitk
+    state: present

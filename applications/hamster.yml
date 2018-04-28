@@ -1,0 +1,6 @@
+---
+
+- name: Install Hamster Time Tracker
+  package:
+    name: hamster-indicator
+    state: present
