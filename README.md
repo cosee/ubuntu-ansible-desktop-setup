@@ -20,7 +20,9 @@ You will have to logout/login for all changes to take affect (docker).
 
 - Slack
 
-- Docker
+- Docker (latest)
+
+- Docker-compose (1.21.0, set different version in defaults.yml)
 
 - htop
 
@@ -32,6 +34,6 @@ You will have to logout/login for all changes to take affect (docker).
 
 ## Default configurations:
 
-- Disables Mouse acceleration (only for mice, not touchpad)
+- Disable Mouse acceleration (only for mice, not touchpad)
 
-- Removes Amazon app
+- Remove Amazon app

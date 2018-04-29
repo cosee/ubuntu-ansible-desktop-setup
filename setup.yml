@@ -26,6 +26,10 @@
     include: applications/docker.yml
     become: yes
 
+  - name: Docker-compose
+    include: applications/docker-compose.yml
+    become: yes
+
   - name: htop
     include: applications/htop.yml
     become: yes

@@ -37,7 +37,7 @@
     state: present
   when: docker_user != ""
 
-- name: Ensure docker is started.
+- name: Ensure docker is started
   service:
     name: docker
     state: restarted
