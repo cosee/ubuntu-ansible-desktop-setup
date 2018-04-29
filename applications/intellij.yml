@@ -1,0 +1,4 @@
+---
+
+- name: Install IntelliJ
+  command: snap install intellij-idea-ultimate --classic

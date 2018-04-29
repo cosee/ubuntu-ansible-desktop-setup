@@ -24,6 +24,10 @@ You will have to logout/login for all changes to take affect (docker).
 
 - Docker-compose (1.21.0, set different version in defaults.yml)
 
+- Maven
+
+- IntelliJ
+
 - htop
 
 - gitk

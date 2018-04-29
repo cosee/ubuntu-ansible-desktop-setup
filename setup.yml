@@ -30,6 +30,14 @@
     include: applications/docker-compose.yml
     become: yes
 
+  - name: maven
+    include: applications/maven.yml
+    become: yes
+
+  - name: IntelliJ
+    include: applications/intellij.yml
+    become: yes
+
   - name: htop
     include: applications/htop.yml
     become: yes
