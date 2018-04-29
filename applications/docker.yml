@@ -1,0 +1,43 @@
+---
+
+- name: Remove previous docker installation
+  apt:
+    name: docker docker-engine docker.io
+    state: absent
+
+- name: Import Docker CE repository gpg key
+  apt_key:
+    url: https://download.docker.com/linux/ubuntu/gpg
+    state: present
+    id: 9DC858229FC7DD38854AE2D88D81803C0EBFCD88
+
+# TODO bionic is currently not supported. once it is, change 'artful' to 'bionic'
+- name: Add Docker CE repository
+  apt_repository:
+    repo: "deb [arch=amd64] https://download.docker.com/linux/ubuntu artful stable"
+    state: present
+
+- name: Install docker-ce
+  apt: 
+    name: docker-ce
+    state: present
+    update-cache: yes
+
+- name: Create a group for docker_user
+  group:
+    name: docker
+    state: present
+  when: docker_user != ""
+
+- name: Adding User to docker-group (for use without sudo)
+  user:
+    name: '{{ docker_user }}'
+    groups: docker
+    append: yes
+    state: present
+  when: docker_user != ""
+
+- name: Ensure docker is started.
+  service:
+    name: docker
+    state: restarted

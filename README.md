@@ -8,18 +8,30 @@ After installing ansible via the `install.sh` you can execute the playbook with:
 
 `ansible-playbook setup.yml --ask-become-pass`
 
-By default it installs the following:
+Look into the `defaults.yml` and change variables as you need. E.g. you will need to change 'docker_user' to your username in order for ansible to configure the docker group correctly.
 
-Java 8
+You will have to logout/login for all changes to take affect (docker).
 
-Chrome
+## By default it installs the following:
 
-Slack
+- Java 8
 
-htop
+- Chrome
 
-gitk
+- Slack
 
-xclip
+- Docker
 
-Hamster Time Tracker (TODO not available in apt repository)
+- htop
+
+- gitk
+
+- xclip
+
+(- Hamster Time Tracker (TODO not available in apt repository))
+
+## Default configurations:
+
+- Disables Mouse acceleration (only for mice, not touchpad)
+
+- Removes Amazon app

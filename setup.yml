@@ -1,8 +1,12 @@
 ---
 
 - name: Ubuntu desktop setup
-  hosts: localhost
+  hosts: localhost    
   tasks:
+
+  - name: Include variables
+    include_vars:
+      file: defaults.yml
 
 #-------------Applications---------------
 
@@ -18,6 +22,10 @@
     include: applications/slack.yml
     become: yes
 
+  - name: Docker
+    include: applications/docker.yml
+    become: yes
+
   - name: htop
     include: applications/htop.yml
     become: yes
@@ -30,13 +38,17 @@
     include: applications/xclip.yml
     become: yes
 
-  - name: Hamster Time Tracker
-    include: applications/hamster.yml
-    become: yes
+#  - name: Hamster Time Tracker
+#    include: applications/hamster.yml
+#    become: yes
 
 
 # ------------Configurations--------------
 
   - name: Remove mouse acceleration
     include: configurations/mouse/mouse.yml
+    become: yes
+
+  - name: Remove Amazon app
+    include: configurations/amazon-app.yml
     become: yes

@@ -1,0 +1,8 @@
+---
+
+- name: Remove Amazon app
+  command: 'dpkg-divert \
+   --divert /usr/share/applications/ubuntu-amazon-default.desktop.diverted \
+   --local \
+   --rename \
+   /usr/share/applications/ubuntu-amazon-default.desktop'
