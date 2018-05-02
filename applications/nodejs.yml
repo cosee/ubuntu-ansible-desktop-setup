@@ -1,0 +1,46 @@
+- name: Install the gpg key for nodejs LTS
+  apt_key:
+    url: "https://deb.nodesource.com/gpgkey/nodesource.gpg.key"
+    state: present
+
+- name: Install the nodejs LTS repos
+  apt_repository:
+    repo: "deb https://deb.nodesource.com/node_{{ nodejs_version }}.x {{ ansible_distribution_release }} main"
+    state: present
+    update_cache: yes
+
+- name: Install the nodejs
+  apt:
+    name: nodejs
+    state: present
+
+- file:
+    path: ~/.npm-global
+    state: directory
+  become: no
+  become_user: pritsch
+
+# name: Fix global permissions
+#  script: nodejs-fix.sh
+#  become: no
+#  become_user: '{{ user }}'
+
+
+
+- name: Fix global package permissions
+  shell: |
+    npm config set prefix '~/.npm-global'
+  become: no
+  become_user: pritsch
+
+- name: Does $PATH conatain npm path?
+  command: echo $PATH | grep "~/.npm-global/bin"
+  register: path_contains_npm_path
+  become: no
+  become_user: pritsch
+
+- name: Fix global package permissions
+  copy:
+    dest: /etc/profile.d/custom-path.sh
+    content: 'PATH=$PATH:~/.npm-global/bin'
+  when: path_contains_npm_path.stdout is not defined or path_contains_npm_path.stdout != ""

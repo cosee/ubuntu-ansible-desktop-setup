@@ -65,7 +65,11 @@
 #  - name: Bob The Fish (omf theme)
 #    include: applications/fish/bobthefish.yml
 #    become: yes
-
+#
+#  - name: NodeJS
+#    include: applications/nodejs.yml
+#    become: yes
+#
 # currently not working with bionic repos
 #  - name: Hamster Time Tracker
 #    include: applications/hamster.yml

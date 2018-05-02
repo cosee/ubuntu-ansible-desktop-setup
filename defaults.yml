@@ -3,3 +3,5 @@
 
 # Need to set the docker-compose version manually
 docker_compose_version: '1.21.0'
+
+nodejs_version: '9'
