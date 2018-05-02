@@ -71,6 +71,13 @@
 #    include: applications/hamster.yml
 #    become: yes
 
+# KDE only:
+
+#  - name: set meta only shortcut to present windows (window overview)
+#    include: applications/kde/meta-only-present-windows-shortcut.yml
+#    become: yes
+
+
 
 # ------------Configurations--------------
 
