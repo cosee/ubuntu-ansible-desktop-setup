@@ -28,6 +28,8 @@ You will have to logout/login for all changes to take affect (docker).
 
 - IntelliJ
 
+- Tilix (Terminal)
+
 - htop
 
 - gitk

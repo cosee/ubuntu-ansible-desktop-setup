@@ -38,6 +38,10 @@
     include: applications/intellij.yml
     become: yes
 
+  - name: tilix
+    include: applications/tilix.yml
+    become: yes
+
   - name: htop
     include: applications/htop.yml
     become: yes

@@ -1,0 +1,6 @@
+---
+
+- name: Install tilix
+  package:
+    name: tilix
+    state: present
