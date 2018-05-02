@@ -4,7 +4,12 @@
     name: fish
     state: present
 
-- name: change shell
-  command: chsh -s /usr/bin/fish
+- name: get the username running the deploy
+  local_action: command whoami
+  become: no
+  register: username_on_the_host
 
-
+- name: Set fish as default shell
+  user: 
+    name: "{{ username_on_the_host.stdout }}"
+    shell: /usr/bin/fish

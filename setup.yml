@@ -53,15 +53,15 @@
 #  - name: xclip
 #    include: applications/xclip.yml
 #    become: yes
-
+#
 #  - name: Fish Shell
 #    include: applications/fish/fish-shell.yml
 #    become: yes
-
+#
 #  - name: Oh My Fish
 #    include: applications/fish/ohmyfish.yml
 #    become: yes
-
+#
 #  - name: Bob The Fish (omf theme)
 #    include: applications/fish/bobthefish.yml
 #    become: yes

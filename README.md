@@ -2,7 +2,7 @@
 Execute the `install.sh` and follow the instructions.
 
 # Applications
-You must modify the `setup.yml` to install only applications you want.
+You must modify the `setup.yml` to install only applications you want. By default all applications and configurations are commented out.
 
 To include applications just uncomment the packages.
 
@@ -14,7 +14,7 @@ Look into the `defaults.yml` and change variables as you need. E.g. you will nee
 
 You will have to logout/login for all changes to take affect (docker).
 
-## By default it installs the following:
+## By default following applications are available:
 
 - Java 8
 
@@ -31,6 +31,10 @@ You will have to logout/login for all changes to take affect (docker).
 - IntelliJ
 
 - Tilix (Terminal)
+
+- Fish (instead of Bash)
+
+- Oh my fish (with theme BobTheFish for fish)
 
 - htop
 
