@@ -2,7 +2,9 @@
 Execute the `install.sh` and follow the instructions.
 
 # Applications
-You can modify the `setup.yml` to use install only applications you need.
+You must modify the `setup.yml` to install only applications you want.
+
+To include applications just uncomment the packages.
 
 After installing ansible via the `install.sh` you can execute the playbook with:
 

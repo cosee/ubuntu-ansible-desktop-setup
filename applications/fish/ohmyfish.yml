@@ -1,0 +1,7 @@
+---
+- name: download omf
+  get_url: https://get.oh-my.fish
+    dest: fish.sh
+
+- name: install omf
+  command: fish fish.sh

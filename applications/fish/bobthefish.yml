@@ -1,0 +1,9 @@
+---
+- name: install powerline fonts
+  package:
+    name: fonts-powerline
+    state: present
+
+- name: install bobthefish theme
+  command: omf install bobthefish
+

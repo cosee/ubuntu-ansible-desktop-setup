@@ -10,50 +10,63 @@
 
 #-------------Applications---------------
 
-  - name: Java 8
-    include: applications/java.yml
-    become: yes
+#  - name: Java 8
+#    include: applications/java.yml
+#    become: yes
+#
+#  - name: Chrome
+#    include: applications/chrome.yml
+#    become: yes
+#
+#  - name: Slack
+#    include: applications/slack.yml
+#    become: yes
+#
+#  - name: Docker
+#    include: applications/docker.yml
+#    become: yes
+#
+#  - name: Docker-compose
+#    include: applications/docker-compose.yml
+#    become: yes
+#
+#  - name: maven
+#    include: applications/maven.yml
+#    become: yes
+#
+#  - name: IntelliJ
+#    include: applications/intellij.yml
+#    become: yes
+#
+#  - name: tilix
+#    include: applications/tilix.yml
+#    become: yes
+#
+#  - name: htop
+#    include: applications/htop.yml
+#    become: yes
+#
+#  - name: gitk
+#    include: applications/gitk.yml
+#    become: yes
+#
+#  - name: xclip
+#    include: applications/xclip.yml
+#    become: yes
 
-  - name: Chrome
-    include: applications/chrome.yml
-    become: yes
+#  - name: Fish Shell
+#    include: applications/fish/fish-shell.yml
+#    become: yes
 
-  - name: Slack
-    include: applications/slack.yml
-    become: yes
+#  - name: Oh My Fish
+#    include: applications/fish/ohmyfish.yml
+#    become: yes
 
-  - name: Docker
-    include: applications/docker.yml
-    become: yes
+#  - name: Bob The Fish (omf theme)
+#    include: applications/fish/bobthefish.yml
+#    become: yes
 
-  - name: Docker-compose
-    include: applications/docker-compose.yml
-    become: yes
-
-  - name: maven
-    include: applications/maven.yml
-    become: yes
-
-  - name: IntelliJ
-    include: applications/intellij.yml
-    become: yes
-
-  - name: tilix
-    include: applications/tilix.yml
-    become: yes
-
-  - name: htop
-    include: applications/htop.yml
-    become: yes
-
-  - name: gitk
-    include: applications/gitk.yml
-    become: yes
-
-  - name: xclip
-    include: applications/xclip.yml
-    become: yes
-
+# currently not working with bionic repos
 #  - name: Hamster Time Tracker
 #    include: applications/hamster.yml
 #    become: yes
@@ -61,10 +74,10 @@
 
 # ------------Configurations--------------
 
-  - name: Remove mouse acceleration
-    include: configurations/mouse/mouse.yml
-    become: yes
-
-  - name: Remove Amazon app
-    include: configurations/amazon-app.yml
-    become: yes
+#  - name: Remove mouse acceleration
+#    include: configurations/mouse/mouse.yml
+#    become: yes
+#
+#  - name: Remove Amazon app
+#    include: configurations/amazon-app.yml
+#    become: yes
