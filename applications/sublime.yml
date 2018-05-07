@@ -1,0 +1,4 @@
+---
+
+- name: Install Sublime
+  command: snap install sublime-text --classic
