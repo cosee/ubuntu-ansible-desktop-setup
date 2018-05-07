@@ -42,6 +42,8 @@ You will have to logout/login for all changes to take affect (docker).
 
 - xclip
 
+- Sublime-Text 3
+
 (- Hamster Time Tracker (TODO not available in apt repository))
 
 ## Default configurations:
