@@ -38,6 +38,10 @@
 #    include: applications/intellij.yml
 #    become: yes
 #
+#  - name: Postman
+#    include: applications/postman/postman.yml
+#    become: yes
+#
 #  - name: tilix
 #    include: applications/tilix.yml
 #    become: yes

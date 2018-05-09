@@ -1,0 +1,2 @@
+- debug: 
+    msg: "name: {{ ansible_user }}, has id {{ ansible_user_id }}"

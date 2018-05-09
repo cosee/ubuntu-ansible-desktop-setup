@@ -18,26 +18,19 @@
     path: ~/.npm-global
     state: directory
   become: no
-  become_user: pritsch
-
-# name: Fix global permissions
-#  script: nodejs-fix.sh
-#  become: no
-#  become_user: '{{ user }}'
-
-
+  become_user: "{{ ansible_user_id }}"
 
 - name: Fix global package permissions
   shell: |
     npm config set prefix '~/.npm-global'
   become: no
-  become_user: pritsch
+  become_user: "{{ ansible_user_id }}"
 
 - name: Does $PATH conatain npm path?
   command: echo $PATH | grep "~/.npm-global/bin"
   register: path_contains_npm_path
   become: no
-  become_user: pritsch
+  become_user: "{{ ansible_user_id }}"
 
 - name: Fix global package permissions
   copy:

@@ -30,6 +30,8 @@ You will have to logout/login for all changes to take affect (docker).
 
 - IntelliJ
 
+- Postman
+
 - Tilix (Terminal)
 
 - Fish (instead of Bash)

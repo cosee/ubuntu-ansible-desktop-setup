@@ -23,24 +23,17 @@
     state: present
     update-cache: yes
 
-- name: get the username running the deploy
-  local_action: command whoami
-  become: no
-  register: username_on_the_host
-
 - name: Create a group for docker_user
   group:
     name: docker
     state: present
-  when: username_on_the_host.stdout != ""
 
 - name: Adding User to docker-group (for use without sudo)
   user:
-    name: '{{ username_on_the_host.stdout }}'
+    name: '{{ ansible_user_id }}'
     groups: docker
     append: yes
     state: present
-  when: username_on_the_host.stdout != ""
 
 - name: Ensure docker is started
   service:

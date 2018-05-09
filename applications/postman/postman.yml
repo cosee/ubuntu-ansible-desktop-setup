@@ -1,0 +1,20 @@
+---
+- name: Download and unpack Postman
+  unarchive: 
+    src: https://dl.pstmn.io/download/latest/linux64
+    dest: /opt/
+    remote_src: yes
+
+- name: Create symlink for Postman
+  file:
+    src: /opt/Postman/Postman
+    dest: /usr/bin/postman
+    state: link
+
+- name: Create Postman desktop file
+  copy:
+    src: postman.desktop
+    dest: ~/.local/share/applications/
+    force: no
+  become: no
+  become_user: "{{ ansible_user_id }}"
