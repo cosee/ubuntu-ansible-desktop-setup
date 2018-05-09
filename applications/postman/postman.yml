@@ -18,3 +18,8 @@
     force: no
   become: no
   become_user: "{{ ansible_user_id }}"
+
+- name: Install missing lib for Postman
+  package: 
+    name: libgconf-2-4
+    state: present
