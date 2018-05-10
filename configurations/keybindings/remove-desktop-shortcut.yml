@@ -1,0 +1,4 @@
+---
+
+- name: Remove Keybinding for show desktop
+  command: dconf write /org/gnome/desktop/wm/keybindings/show-desktop "['<Primary><Super>d', '<Super>d']"

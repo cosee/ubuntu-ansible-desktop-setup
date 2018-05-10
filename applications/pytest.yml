@@ -1,0 +1,6 @@
+---
+- name: check if pip already installed
+  include: pip.yml
+
+- name: Install pytest
+  command: pip install -U pytest

@@ -1,0 +1,6 @@
+---
+
+- name: Install gimp
+  package:
+    name: gimp
+    state: present

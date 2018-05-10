@@ -10,6 +10,26 @@
 
 #-------------Applications---------------
 
+#  - name: openvpn
+#    include: applications/openvpn.yml
+#    become: yes
+#      
+#  - name: gimp
+#    include: applications/gimp.yml
+#    become: yes
+
+#  - name: spotify
+#    include: applications/spotify.yml
+#    become: yes
+
+#  - name: pip
+#    include: applications/pip.yml
+#    become: yes
+
+#  - name: pytest
+#    include: applications/pytest.yml
+#    become: yes
+
 #  - name: Java 8
 #    include: applications/java.yml
 #    become: yes
@@ -92,7 +112,9 @@
 
 
 # ------------Configurations--------------
-
+#  - name: Remove super + alt + d keybinding to show desktop
+#    include: configurations/keybindings/remove-desktop-shortcut.yml
+#
 #  - name: Remove mouse acceleration
 #    include: configurations/mouse/mouse.yml
 #    become: yes
