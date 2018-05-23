@@ -34,17 +34,29 @@ You will have to logout/login for all changes to take affect (docker).
 
 - Tilix (Terminal)
 
+- Sublime-Text 3
+
 - Fish (instead of Bash)
 
 - Oh my fish (with theme BobTheFish for fish)
+
+- NodeJS (version 9.x, change version in the defaults)
+
+- openvpn
+
+- gimp
+
+- spotify
+
+- pip
+
+- pytest
 
 - htop
 
 - gitk
 
 - xclip
-
-- Sublime-Text 3
 
 (- Hamster Time Tracker (TODO not available in apt repository))
 
@@ -53,3 +65,7 @@ You will have to logout/login for all changes to take affect (docker).
 - Disable Mouse acceleration (only for mice, not touchpad)
 
 - Remove Amazon app
+
+## KDE only
+
+- Set meta only shortcut to present window overview
