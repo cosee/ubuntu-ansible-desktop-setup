@@ -45,6 +45,8 @@
 #
 #  - { name: NodeJS, include: applications/nodejs.yml, become: yes }
 #
+#  - { name: Angular CLI, include: applications/angular.yml, become: no }
+#
 #  - { name: openvpn, include: applications/openvpn.yml, become: yes }
 #
 #  - { name: gimp, include: applications/gimp.yml, become: yes }

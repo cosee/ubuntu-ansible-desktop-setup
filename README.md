@@ -42,6 +42,8 @@ You will have to logout/login for all changes to take affect (docker).
 
 - NodeJS (version 9.x, change version in the defaults)
 
+- Angular-CLI
+
 - openvpn
 
 - gimp
