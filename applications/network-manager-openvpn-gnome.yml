@@ -1,0 +1,6 @@
+---
+
+- name: Install network manager openvpn gnome
+  package:
+    name: network-manager-openvpn-gnome
+    state: present

@@ -1,6 +1,8 @@
 # Install Ansible
 Execute the `install.sh` and follow the instructions.
 
+The `install-git-and-ansible.sh` file is available for independent installation via e.g. USB. It installs git + ansible and pulls the project so everything is ready to go.
+
 # Applications
 You must modify the `setup.yml` to install only applications you want. By default all applications and configurations are commented out.
 
@@ -9,6 +11,8 @@ To include applications just uncomment the packages.
 After installing ansible via the `install.sh` you can execute the playbook with:
 
 `ansible-playbook setup.yml --ask-become-pass`
+
+Remote setup is only possible if the server has the ssh daemon installed.
 
 Look into the `defaults.yml` and change variables as you need. E.g. you will need to change 'docker_user' to your username in order for ansible to configure the docker group correctly.
 
@@ -60,7 +64,7 @@ You will have to logout/login for all changes to take affect (docker).
 
 - xclip
 
-(- Hamster Time Tracker (TODO not available in apt repository))
+- Network manager openvpn for Gnome
 
 ## Default configurations:
 
