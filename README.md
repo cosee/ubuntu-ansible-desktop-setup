@@ -58,6 +58,8 @@ You will have to logout/login for all changes to take affect (docker).
 
 - pytest
 
+- aws-cli
+
 - htop
 
 - gitk

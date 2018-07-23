@@ -57,6 +57,8 @@
 #
 #  - { name: pytest, include: applications/pytest.yml, become: yes }
 #
+#  - { name: aws-cli, include: applications/aws-cli.yml, become: yes }
+#
 #  - { name: Network Manager openvpn for Gnome, include: applications/network-manager-openvpn-gnome.yml, become: yes }
 #
 
