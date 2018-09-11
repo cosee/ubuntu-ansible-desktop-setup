@@ -1,0 +1,4 @@
+---
+
+- name: Install notepadqq
+  command: snap install notepadqq

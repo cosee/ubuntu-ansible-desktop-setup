@@ -1,0 +1,4 @@
+---
+
+- name: Install GHex
+  command: snap install ghex-udt

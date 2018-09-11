@@ -1,0 +1,4 @@
+---
+
+- name: Install VLC
+  command: snap install vlc

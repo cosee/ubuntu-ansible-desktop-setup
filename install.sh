@@ -19,6 +19,6 @@ fi
 # Display real installation process #
 echo ""
 echo "To install the provided applications run ansible with: "
-echo "  ansible-playbook install.yml --ask-become-pass"
+echo "  ansible-playbook setup.yml --ask-become-pass"
 echo "Feel free to remove unwanted applications or configurations by removing them from the 'install.yml'"
 echo ""

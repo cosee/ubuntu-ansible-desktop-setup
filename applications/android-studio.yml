@@ -1,0 +1,4 @@
+---
+
+- name: Install Android-Studio
+  command: snap install android-studio --classic

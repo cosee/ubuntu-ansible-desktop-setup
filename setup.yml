@@ -25,6 +25,8 @@
 #
 #  - { name: IntelliJ, include: applications/intellij.yml, become: yes }
 #
+#  - { name: Android-Studio, include: applications/android-studio.yml, become: yes }
+#
 #  - { name: Postman, include: applications/postman/postman.yml, become: yes }
 #
 #  - { name: tilix, include: applications/tilix.yml, become: yes }
@@ -36,6 +38,12 @@
 #  - { name: xclip, include: applications/xclip.yml, become: yes }
 #
 #  - { name: Sublime-text, include: applications/sublime.yml, become: yes }
+#
+#  - { name: notepadqq, include: applications/notepadqq.yml, become: yes }
+#
+#  - { name: Atom, include: applications/atom.yml, become: yes }
+#
+#  - { name: GHex, include: applications/ghex.yml, become: yes }
 #
 #  - { name: Fish Shell, include: applications/fish/fish-shell.yml, become: yes }
 #
@@ -51,7 +59,9 @@
 #
 #  - { name: gimp, include: applications/gimp.yml, become: yes }
 #
-#  - { name: spotify, include: applications/spotify.yml, become: yes }
+#  - { name: Spotify, include: applications/spotify.yml, become: yes }
+#
+#  - { name: VLC, include: applications/vlc.yml, become: yes }
 #
 #  - { name: pip, include: applications/pip.yml, become: yes }
 #

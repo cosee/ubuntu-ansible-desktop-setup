@@ -34,11 +34,19 @@ You will have to logout/login for all changes to take affect (docker).
 
 - IntelliJ
 
+- Android-Studio
+
 - Postman
 
 - Tilix (Terminal)
 
 - Sublime-Text 3
+
+- notepadqq
+
+- Atom
+
+- GHex
 
 - Fish (instead of Bash)
 
@@ -52,7 +60,9 @@ You will have to logout/login for all changes to take affect (docker).
 
 - gimp
 
-- spotify
+- Spotify
+
+- VLC
 
 - pip
 
