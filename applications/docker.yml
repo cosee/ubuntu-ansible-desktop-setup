@@ -11,10 +11,9 @@
     state: present
     id: 9DC858229FC7DD38854AE2D88D81803C0EBFCD88
 
-# TODO bionic is currently not supported. once it is, change 'artful' to 'bionic'
 - name: Add Docker CE repository
   apt_repository:
-    repo: "deb [arch=amd64] https://download.docker.com/linux/ubuntu artful stable"
+    repo: "deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable"
     state: present
 
 - name: Install docker-ce
