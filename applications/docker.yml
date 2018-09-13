@@ -2,7 +2,7 @@
 
 - name: Remove previous docker installation
   apt:
-    name: docker docker-engine docker.io
+    name: docker docker-engine docker.io docker-ce
     state: absent
 
 - name: Import Docker CE repository gpg key
