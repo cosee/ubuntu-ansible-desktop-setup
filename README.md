@@ -80,6 +80,8 @@ You will have to logout/login for all changes to take affect (docker).
 
 ## Default configurations:
 
+- Increase max number of files to watch for nodejs file watcher (necessary for bigger node_modules directories in projects)
+
 - Disable Mouse acceleration (only for mice, not touchpad)
 
 - Remove Amazon app

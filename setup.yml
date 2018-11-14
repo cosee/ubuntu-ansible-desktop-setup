@@ -1,7 +1,7 @@
 ---
 
 - name: Ubuntu desktop setup
-  hosts: localhost    
+  hosts: localhost
   tasks:
 
   - name: Include variables
@@ -75,6 +75,8 @@
 
 # ------------Configurations--------------
 
+  - { name: Increase max number of files to watch for nodejs file watcher, include: configurations/node-file-watcher-increase.yml }
+#
 #  - { name: Remove super + alt + d keybinding to show desktop, include: configurations/keybindings/remove-desktop-shortcut.yml }
 #
 #  - { name: Remove mouse acceleration, include: configurations/mouse/mouse.yml, become: yes }
