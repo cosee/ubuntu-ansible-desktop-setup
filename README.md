@@ -28,7 +28,7 @@ You will have to logout/login for all changes to take affect (docker).
 
 - Docker (latest)
 
-- Docker-compose (1.21.0, set different version in defaults.yml)
+- Docker-compose (1.23.1, set different version in defaults.yml)
 
 - Maven
 
